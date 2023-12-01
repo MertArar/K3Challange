@@ -1,12 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class ClearCounter : BaseCounter, IKitchenObjectParent
+public class ContainerCounter : BaseCounter, IKitchenObjectParent
 {
-    
     [SerializeField] private KitchenObjectSO kitchenObjectSO;
     [SerializeField] private Transform counterTopPoint;
 
@@ -26,7 +23,6 @@ public class ClearCounter : BaseCounter, IKitchenObjectParent
             
         }
     }
-
     public Transform GetKitchenObjectFollowTransform()
     {
         return counterTopPoint;
